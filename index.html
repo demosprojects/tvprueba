@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> TvPlay </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/icon64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icon180.png">
+    <meta name="msapplication-square70x70logo" content="../images/icon70.png">
+    <meta name="msapplication-square150x150logo" content="../images/icon150.png">
+    <meta name="msapplication-square310x310logo" content="../images/icon310.png">
+    <meta name="msapplication-wide310x150logo" content="../images/icon310-rect.png">
+    <meta name="msapplication-TileColor" content="#2e2e2e">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-xlarge w3-padding" style="height:75px;background-color: rgba(0, 0, 0, 0.8)!important;box-shadow: 0px 0px 20px 0px #000;">
+            <div class="w3-left">
+                <a class="w3-btn-back" href="javascript:window.history.back();"><i class="material-icons" style="font-size: 40px;">&#xe5cb;</i></a>
+                <img class="w3-logo" src="http://192.168.248.5/images/Default.png" >
+            </div>
+            <div class="w3-right">
+                <a id="Openmenu" href="javascript:void(0)" class="w3-bar-item w3-button"> Menú <i class="material-icons">&#xe5d2;</i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-animate-right w3-light-grey" style="display:none;right:0;top:0;z-index:100" id="Menu">
+        <a href="javascript:void(0)" class="w3-button w3-large w3-block"> <i class="material-icons">&#xe5cd; </i> </a>
+        <a href="http://192.168.248.5/?index" class="w3-bar-item w3-button" style="border-top: 2px solid black !important;">Inicio</a>
+        <a id="Genres" href="javascript:void(0)" class="w3-button w3-black w3-block"> Géneros <i class="material-icons">&#xe5c5;</i></a>
+        <div id="Generos" class="w3-container" style="display:none;">
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Nacionales">Nacionales</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Noticias">Noticias</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Deportes">Deportes</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Novelas">Novelas</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Música">Música & Radio</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Variedad">Variados</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Infantiles">Infantiles</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Cultura">Cultura</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="Religión">Religión</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button data_link" data-filter="chanel">Todos</a>
+        </div>		
+        <a href="http://192.168.248.5/?help" class="w3-bar-item w3-button" style="border-top: 2px solid black !important;"><i class="material-icons">&#xe8fd;</i> Ayuda </a>
+        <a href="http://192.168.248.5/?login" class="w3-bar-item w3-button w3-border-top w3-border-bottom" style="border-top: 2px black solid !important;"><i class="material-icons">&#xe851;</i> Iniciar Sesión</a>	
+    </div>	
+
+    <div id="Contenido" class="w3-row" style="margin-top:75px; margin-bottom:20px; margin-left:5px; margin-right:5px;">	
+        <div class="w3-items-index">
+            <script type='text/javascript'>function appClick(id){ try { location.href = 'http://192.168.248.5/?tvwatch#' + id } catch(e) {/*Error*/}}</script>
+            <div class="w3-col l12 m12 s12 w3-text-white"><h2>Grilla</h2>
+                <a onclick="appClick('local-9101');" href="javascript:void(0)" class="w3-col l2 m2 s6 w3-tv-items chanel Nacionales Noticias Novelas Variedad" id="link_local-9101">
+                    <div><img src="http://192.168.248.5/images/canal9_285.png" style="width: 100%;" /></div>
+                </a>
+                <a onclick="appClick('local-9103');" href="javascript:void(0)" class="w3-col l2 m2 s6 w3-tv-items chanel Novelas Variedad" id="link_local-9103">
+                    <div><img src="http://192.168.248.5/images/las-estrellas_285.png" style="width: 100%;" /></div>
+                </a>
+                <a onclick="appClick('local-9104');" href="javascript:void(0)" class="w3-col l2 m2 s6 w3-tv-items chanel Infantiles Cultura Mundo" id="link_local-9104">
+                    <div><img src="http://192.168.248.5/images/NationalGeographic_285.png" style="width: 100%;" /></div>
+                </a>
+                <a onclick="appClick('local-9105');" href="javascript:void(0)" class="w3-col l2 m2 s6 w3-tv-items chanel ...">
+                    <!-- Resto de los enlaces -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

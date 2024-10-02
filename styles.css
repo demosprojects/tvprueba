@@ -1,0 +1,43 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    background-color: #262626;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.material-icons {
+    vertical-align: -25%;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:active img,
+a:focus img,
+a:hover img {
+    opacity: 0.7;
+}
+
+.w3-btn-back {
+    vertical-align: -10%;
+}
+
+.w3-logo {
+    height: 60px;
+}
+
+.w3-left a:hover i,
+.controls-top a:focus i {
+    background: rgba(204, 204, 204, 0.5);
+}
+
+.w3-text-shadow {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 1);
+}
+
+/* Estilos adicionales pueden ir aquí */
